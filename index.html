@@ -1,0 +1,152 @@
+<!-- Stylesheet -->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero">Rikkulaku</a>
+            <nav class="nav" id="nav">
+                <a href="#services">Layanan</a>
+                <a href="#parts">Sparepart</a>
+                <a href="#pricing">Harga</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Buka menu">☰</button>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-inner"> 
+                <div class="hero-text">
+                    <h1>Rikkulaku — Service HP Profesional & Sparepart Asli"<class="fade-in"></class></h1>
+                    <p class="lead">Perbaikan cepat, teknisi berpengalaman, garansi layanan. Booking online atau datang langsung.</p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#contact">Book Sekarang</a>
+                        <a class="btn ghost" href="#services">Lihat Layanan</a>
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <!-- Placeholder image: replace with real image at /images/hero.jpg -->
+                    <img src="./images/Rikkulaku.png" alt="Logo Rikkulaku" class="fade-in">
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Layanan Kami</h2>
+                <p class="section-sub">Layanan profesional untuk semua merek HP.</p>
+                <div class="cards fade-in">
+                    <article class="card">
+                        <h3>Diagnosa Cepat</h3>
+                        <p>Deteksi masalah dalam 30 menit. Laporan transparan & biaya jelas.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Ganti LCD & Touchscreen</h3>
+                        <p>Sparepart berkualitas, pemasangan rapi, uji fungsi sebelum serah terima.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Ganti Baterai & Charging</h3>
+                        <p>Baterai resmi & pengujian daya untuk umur pakai optimal.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <h2>Paket & Estimasi Harga</h2>
+                <p class="section-sub">Estimasi cepat — harga final tergantung diagnosa.</p>
+                <div class="pricing-grid fade-in">
+                <div class="pricing-card">
+                    <h3>Servis Basic</h3>
+                    <p class="price">Rp 50.000 - Rp 150.000</p>
+                    <ul>
+                        <li>Diagnosa</li>
+                        <li>Perbaikan minor</li>
+                        <li>1-3 hari pengerjaan</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Servis Lengkap</h3>
+                    <p class="price">Rp 150.000 - Rp 800.000+</p>
+                    <ul>
+                        <li>Ganti komponen utama</li>
+                        <li>Garansi 30 hari</li>
+                        <li>1-5 hari pengerjaan</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Sparepart Only</h3>
+                    <p class="price">Harga bervariasi</p>
+                    <ul>
+                        <li>Garansi part sesuai vendor</li>
+                        <li>Services optional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Kontak & Booking</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                <p><strong>Alamat:</strong> Jl. Contoh No.123, Jakarta</p>
+                <p><strong>Telepon/WA:</strong> <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+                <p><strong>Jam Operasional:</strong> Senin–Sabtu, 09:00–18:00</p>
+                <p><strong>Instagram:</strong> <a href="#">@rikkulaku</a></p>
+            </div>
+            <form id="contactForm" class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+                <label for="name">Nama</label>
+                <input id="name" name="name" type="text" required>
+
+
+                <label for="phone">Telepon / WA</label>
+                <input id="phone" name="phone" type="tel" required>
+
+
+                <label for="service">Layanan yang diinginkan</label>
+                <select id="service" name="service">
+                    <option>Diagnosa</option>
+                    <option>Ganti LCD</option>
+                    <option>Ganti Baterai</option>
+                    <option>Sparepart</option>
+                </select>
+
+
+                <label for="note">Catatan singkat</label>
+                <textarea id="note" name="note" rows="4"></textarea>
+
+
+                <div class="form-row">
+                    <button type="submit" class="btn primary">Kirim & Booking</button>
+                    <button type="button" id="callBtn" class="btn ghost">Hubungi WA</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+     <p>© <span id="year"></span> Rikkulaku. Semua hak dilindungi.</p>
+     <nav class="footer-nav">
+        <a href="#privacy">Kebijakan Privasi</a>
+        <a href="#terms">Syarat & Ketentuan</a>
+    </nav>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
